@@ -1,0 +1,74 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Slideshow Container */
+  .slideshow-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden;
+  }
+  
+  /* Individual Slides */
+  .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    opacity: 0;
+    animation: fadeAnimation 12s infinite;
+  }
+  
+  /* Specific Background Images and Animation Delays */
+  .slide1 {
+    background-image: url('images/1.jpg'); /* Replace with your first image path */
+    animation-delay: 0s;
+  }
+  
+  .slide2 {
+    background-image: url('images/2.jpg'); /* Replace with your second image path */
+    animation-delay: 4s;
+  }
+  
+  .slide3 {
+    background-image: url('images/3.jpg'); /* Replace with your third image path */
+    animation-delay: 8s;
+  }
+  
+  /* Fade Animation Keyframes */
+  @keyframes fadeAnimation {
+    0% { opacity: 0; }
+    8.33% { opacity: 1; }
+    25% { opacity: 1; }
+    33.33% { opacity: 0; }
+    100% { opacity: 0; }
+  }
+  
+  /* Top Right Element Styling */
+  .top-right-element {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
+    padding: 10px 20px;
+    border-radius: 5px;
+    
+    color: #fff;
+    font-family: Arial, sans-serif;
+  }
+  
+  .top-right-element h1 {
+    font-size: 24px;
+  }
+  
