@@ -53,7 +53,7 @@ body {
 
 /* Hero Section */
 .hero-section {
-  background: url("./images/weed-3.jpg") no-repeat center bottom/cover;
+  background: url("../images/weed-3.jpg") no-repeat center bottom/cover;
   height: 80vh;
   display: flex;
   align-items: center;
