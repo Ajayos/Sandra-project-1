@@ -51,21 +51,22 @@ body {
   color: #777;
 }
 
+/* Hero Section */
 .hero-section {
-  background: url("./weed-3.jpg") no-repeat center bottom/cover; /* Adjusts the image to always be anchored at the bottom */
+  background: url("./images/weed-3.jpg") no-repeat center bottom/cover;
   height: 80vh;
   display: flex;
-  align-items: center; /* This can be changed to 'flex-end' if you want the content aligned more towards the bottom */
+  align-items: center;
   justify-content: center;
   text-align: center;
   position: relative;
-  margin-top: 80px; /* Accounts for the navbar */
-  filter: grayscale(100%); /* Applies black and white filter */
-  transition: filter 0.5s ease; /* Smooth transition for the filter effect */
+  margin-top: 80px;
+  filter: grayscale(100%);
+  transition: filter 0.5s ease;
 }
 
 .hero-section:hover {
-  filter: grayscale(0%); /* Removes the black and white filter on hover */
+  filter: grayscale(0%);
 }
 
 .hero-section .overlay {
@@ -83,21 +84,13 @@ body {
 }
 
 .hero-content {
-  background: linear-gradient(
-    135deg,
-    rgba(255, 255, 255, 0.4),
-    rgba(255, 255, 255, 0.1)
-  );
+  background: rgba(255, 255, 255, 0.7);
   padding: 20px 40px;
   border-radius: 10px;
-  color: white;
-  max-width: 700px;
+  color: #333;
   z-index: 2;
   position: relative;
-  -webkit-backdrop-filter: blur(
-    5px
-  ); /* Adds a subtle blur for the background */
-  backdrop-filter: blur(5px); /* Adds a subtle blur for the background */
+  max-width: 500px;
 }
 
 .hero-content h1 {
@@ -110,12 +103,17 @@ body {
   margin-bottom: 10px;
 }
 
-.scroll-down a {
-  display: inline-block;
-  margin-top: 20px;
+.view-portfolio-btn {
+  padding: 10px 20px;
+  background-color: #007bff;
   color: white;
-  font-size: 2rem;
   text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.view-portfolio-btn:hover {
+  background-color: #0056b3;
 }
 
 /* Portfolio Section */
@@ -137,9 +135,8 @@ body {
 }
 
 .portfolio-item {
-  flex: 1 1 calc(33.333% - 20px); /* Each item takes 1/3 of the row with space */
+  flex: 1 1 calc(33.333% - 20px);
   margin: 10px;
-  box-sizing: border-box;
   background-color: #fff;
   padding: 20px;
   border-radius: 8px;
@@ -166,37 +163,6 @@ body {
 }
 
 /* Button */
-.view-portfolio-btn {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 10px 30px;
-  background-color: #333;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-
-.view-portfolio-btn:hover {
-  background-color: #555;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .portfolio-grid {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .navbar {
-    flex-direction: column;
-  }
-}
-
-.view-more-btn:hover {
-  background-color: #555;
-}
-
 .view-more-btn {
   display: inline-block;
   margin-top: 10px;
@@ -214,19 +180,57 @@ body {
 
 .button-row {
   display: flex;
-  justify-content: center; /* Center align the buttons in the row */
-  margin-top: 20px; /* Space above the button row */
+  justify-content: center;
+  margin-top: 20px;
 }
 
-.view-portfolio-btn {
-  padding: 10px 20px;
-  background-color: #007bff; /* Adjust as needed */
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-left {
+  text-align: left;
+}
+
+.footer-right {
+  text-align: right;
+}
+
+.footer-right a {
   color: white;
   text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
+  margin: 0 10px;
 }
 
-.view-portfolio-btn:hover {
-  background-color: #0056b3; /* Darker shade on hover */
+.footer-right a:hover {
+  color: #aaa;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .portfolio-grid {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .navbar {
+    flex-direction: column;
+  }
+
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-right {
+    margin-top: 10px;
+  }
 }
