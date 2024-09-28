@@ -1,4 +1,3 @@
-/* General Reset */
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +11,6 @@ body {
   line-height: 1.6;
 }
 
-/* Navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -24,6 +22,18 @@ body {
   top: 0;
   z-index: 1000;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
 }
 
 .logo {
@@ -51,7 +61,23 @@ body {
   color: #777;
 }
 
-/* Hero Section */
+.nav-links2 {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links2 li {
+  display: inline;
+}
+
+.nav-links2 a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+}
+
+
 .hero-section {
   background: url("../images/weed-3.jpg") no-repeat center bottom/cover;
   height: 80vh;
@@ -60,19 +86,15 @@ body {
   justify-content: center;
   text-align: center;
   position: relative;
-  color: rgb(44, 44, 44);
+  color: rgb(255, 255, 255);
   margin-top: 80px;
   filter: grayscale(100%);
   transition: filter 0.5s ease;
-  -webkit-transition: filter 0.5s ease;
-  -moz-transition: filter 0.5s ease;
-  -ms-transition: filter 0.5s ease;
-  -o-transition: filter 0.5s ease;
 }
 
 .hero-section:hover {
   filter: grayscale(0%);
-  color:rgb(255, 255, 255)
+  color: rgb(255, 255, 255);
 }
 
 .hero-section .overlay {
@@ -92,7 +114,6 @@ body {
 .hero-content {
   top: 1%;
   padding: 20px 40px;
-  /* color: #362929; */
   z-index: 2;
   position: relative;
   max-height: 200px;
@@ -116,17 +137,12 @@ body {
   text-decoration: none;
   border-radius: 5px;
   transition: background-color 0.3s ease;
-  -webkit-transition: background-color 0.3s ease;
-  -moz-transition: background-color 0.3s ease;
-  -ms-transition: background-color 0.3s ease;
-  -o-transition: background-color 0.3s ease;
 }
 
 .view-portfolio-btn:hover {
   background-color: #0056b3;
 }
 
-/* Portfolio Section */
 .portfolio-section {
   padding: 50px 0;
   background-color: #fafafa;
@@ -172,7 +188,6 @@ body {
   color: #777;
 }
 
-/* Button */
 .view-more-btn {
   display: inline-block;
   margin-top: 10px;
@@ -194,7 +209,34 @@ body {
   margin-top: 20px;
 }
 
-/* Footer */
+.hero-section2 {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  color: rgb(44, 44, 44);
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.content {
+  z-index: 1;
+  color: white;
+  position: relative;
+  padding: 20px;
+}
+
 .footer {
   display: flex;
   justify-content: space-between;
@@ -224,7 +266,6 @@ body {
   color: #aaa;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .portfolio-grid {
     flex-direction: column;
