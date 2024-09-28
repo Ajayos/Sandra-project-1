@@ -2,27 +2,42 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Responsive Contact us form Using HTML and CSS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Contact Us Form</title>
     <link rel="stylesheet" href="test.css" />
   </head>
   <body>
     <div class="wrapper">
       <div class="title">
-        <h1>contact us form</h1>
+        <h1>Contact Us Form</h1>
       </div>
       <div class="contact-form">
-        <div class="input-fields">
-            <form action="#" method="post">
-          <input type="text" id="name" class="input" placeholder="Name" />
-          <label for="name">Full Name</label>
-          <input type="text" class="input" placeholder="Email Address" />
-          <input type="text" class="input" placeholder="Phone" />
-          <input type="text" class="input" placeholder="Subject" />
-        </div>
-        <div class="msg">
-          <textarea placeholder="Message"></textarea>
-          <div class="btn">send</div>
-        </div>
+        <form action="#" method="post">
+          <div class="field">
+            <input type="email" name="email" id="email" placeholder="jane.appleseed@example.com">
+            <label for="email">Email</label>
+          </div>
+          <div class="input-group">
+            <input type="text" id="name" class="input" required />
+            <label for="name">Full Name</label>
+          </div>
+          <div class="input-group">
+            <input type="email" id="email" class="input" required />
+            <label for="email">Email Address</label>
+          </div>
+          <div class="input-group">
+            <input type="tel" id="phone" class="input" required />
+            <label for="phone">Phone</label>
+          </div>
+          <div class="input-group">
+            <input type="text" id="subject" class="input" required />
+            <label for="subject">Subject</label>
+          </div>
+          <div class="input-group">
+            <textarea id="message" class="input" required></textarea>
+            <label for="message">Message</label>
+          </div>
+          <button type="submit" class="btn">Send</button>
         </form>
       </div>
     </div>

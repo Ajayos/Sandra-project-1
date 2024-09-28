@@ -1,99 +1,170 @@
-
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  outline: none;
-  font-family: 'Roboto', sans-serif;
 }
 
-body{
-  background: url('bg.jpg') no-repeat top center;
-  background-size: cover;
-  height: 100vh;
-}
-
-.wrapper{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  max-width: 550px;
-  background: rgba(0,0,0,0.8);
-  padding: 30px;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
-}
-
-.wrapper .title h1{
-  color: #c5ecfd;
-  text-align: center;
-  margin-bottom: 25px;
-}
-
-.contact-form{
+body {
+  font-family: Arial, sans-serif;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f1f1f1;
 }
 
-.input-fields{
+.wrapper {
+  width: 400px;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.title h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.contact-form {
   display: flex;
   flex-direction: column;
-  margin-right: 4%;
 }
 
-.input-fields,
-.msg{
-  width: 48%;
+.input-group {
+  position: relative;
+  margin-bottom: 20px;
 }
 
-.input-fields .input,
-.msg textarea{
-  margin: 10px 0;
-  background: transparent;
-  border: 0px;
-  border-bottom: 2px solid #c5ecfd;
-  padding: 10px;
-  color: #c5ecfd;
+.input-group .input {
   width: 100%;
+  padding: 10px 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  background: transparent;
 }
 
-.msg textarea{
-  height: 212px;
+.input-group textarea {
+  resize: none;
+  height: 100px;
 }
 
+.input-group label {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  color: #aaa;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+.input-group .input:focus + label,
+.input-group .input:not(:placeholder-shown) + label,
+.input-group textarea:focus + label,
+.input-group textarea:not(:placeholder-shown) + label {
+  cursor: text;
+  max-width: 66.66%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transform-origin: left bottom;
+  transform: translate(0, 2.125rem) scale(1.5);
+}
+
+
+.field {
+  display: flex;
+  flex-flow: column-reverse;
+  margin-bottom: 1em;
+}
+/**
+* Add a transition to the label and input.
+* I'm not even sure that touch-action: manipulation works on
+* inputs, but hey, it's new and cool and could remove the 
+* pesky delay.
+*/
+label, input {
+  transition: all 0.2s;
+  touch-action: manipulation;
+}
+
+input {
+  font-size: 1.5em;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  font-family: inherit;
+  -webkit-appearance: none;
+  border-radius: 0;
+  padding: 0;
+  cursor: text;
+}
+
+input:focus {
+  outline: 0;
+  border-bottom: 1px solid #666;
+}
+
+label {
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+/**
+* Translate down and scale the label up to cover the placeholder,
+* when following an input (with placeholder-shown support).
+* Also make sure the label is only on one row, at max 2/3rds of the
+* field—to make sure it scales properly and doesn't wrap.
+*/
+input:placeholder-shown + label {
+  cursor: text;
+  max-width: 66.66%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transform-origin: left bottom;
+  transform: translate(0, 2.125rem) scale(1.5);
+}
+/**
+* By default, the placeholder should be transparent. Also, it should 
+* inherit the transition.
+*/
 ::-webkit-input-placeholder {
-  /* Chrome/Opera/Safari */
-  color: #c5ecfd;
+  opacity: 0;
+  transition: inherit;
 }
-::-moz-placeholder {
-  /* Firefox 19+ */
-  color: #c5ecfd;
+/**
+* Show the placeholder when the input is focused.
+*/
+input:focus::-webkit-input-placeholder {
+  opacity: 1;
 }
-:-ms-input-placeholder {
-  /* IE 10+ */
-  color: #c5ecfd;
+/**
+* When the element is focused, remove the label transform.
+* Also, do this when the placeholder is _not_ shown, i.e. when 
+* there's something in the input at all.
+*/
+input:not(:placeholder-shown) + label,
+input:focus + label {
+  transform: translate(0, 0) scale(1);
+  cursor: pointer;
 }
 
 .btn {
-    background: #39b7dd;
-    text-align: center;
-    padding: 15px;
-    border-radius: 5px;
-    color: #fff;
-    cursor: pointer;
-    text-transform: uppercase;
+  width: 100%;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
-@media screen and (max-width: 600px){
-  .contact-form{
-    flex-direction: column;
-  }
-  .msg textarea{
-    height: 80px;
-  }
-  .input-fields,
-  .msg{
-    width: 100%;
-  }
+.btn:hover {
+  background-color: #555;
 }
