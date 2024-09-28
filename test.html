@@ -3,43 +3,61 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Responsive Contact Us Form</title>
-    <link rel="stylesheet" href="test.css" />
+    <title>Contact Us | Captured Moments Studio</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    
   </head>
   <body>
-    <div class="wrapper">
-      <div class="title">
-        <h1>Contact Us Form</h1>
-      </div>
-      <div class="contact-form">
-        <form action="#" method="post">
-          <div class="field">
-            <input type="email" name="email" id="email" placeholder="jane.appleseed@example.com">
-            <label for="email">Email</label>
-          </div>
-          <div class="input-group">
-            <input type="text" id="name" class="input" required />
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="logo">Captured Moments Studio</div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+      </ul>
+    </nav>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+      <h1>Contact Us</h1>
+      <p>
+        Welcome to Captured Moments Studio! We specialize in wedding photography, capturing the beauty, emotions, and unforgettable moments of your special day. From candid shots to breathtaking portraits, our experienced team of photographers brings your love story to life through images that will be cherished for generations.
+      </p>
+
+      <div class="contact-form-container">
+        <div class="contact-form-overlay">
+          <form class="contact-form" action="#" method="post">
             <label for="name">Full Name</label>
-          </div>
-          <div class="input-group">
-            <input type="email" id="email" class="input" required />
-            <label for="email">Email Address</label>
-          </div>
-          <div class="input-group">
-            <input type="tel" id="phone" class="input" required />
-            <label for="phone">Phone</label>
-          </div>
-          <div class="input-group">
-            <input type="text" id="subject" class="input" required />
-            <label for="subject">Subject</label>
-          </div>
-          <div class="input-group">
-            <textarea id="message" class="input" required></textarea>
+            <input type="text" id="name" name="name" required placeholder="Your Name" />
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="Your Email" />
+
             <label for="message">Message</label>
-          </div>
-          <button type="submit" class="btn">Send</button>
-        </form>
+            <textarea id="message" name="message" required placeholder="Your Message"></textarea>
+
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
       </div>
-    </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-left">
+        <p>&copy; 2024 Captured Moments Studio. All rights reserved.</p>
+      </div>
+      <div class="footer-right">
+        <p>
+          <a href="https://www.instagram.com">Instagram</a> |
+          <a href="https://www.facebook.com">Facebook</a>
+        </p>
+      </div>
+    </footer>
   </body>
 </html>

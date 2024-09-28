@@ -1,0 +1,110 @@
+/* Hero Section */
+.hero-section2 {
+  position: relative;
+  height: 400px;
+  background: url("../images/18.jpg") no-repeat center center/cover;
+}
+
+.overlay2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content2 {
+  position: relative;
+  color: white;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Engagement Section */
+.engagement-section {
+  padding: 80px 20px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.engagement-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.engagement-section p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.engagement-section ul {
+  list-style-type: none;
+}
+
+/* Gallery Section */
+.gallery-section {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #eef;
+}
+
+.gallery-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Locations Section */
+.locations-section {
+  padding: 40px 20px;
+  background-color: #fff;
+}
+
+.locations-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.locations-section p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+  padding: 40px 20px;
+  background-color: #eef;
+  text-align: center;
+}
+
+.testimonials-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+blockquote {
+  font-style: italic;
+  margin: 20px 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+}

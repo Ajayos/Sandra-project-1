@@ -5,193 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Us | Captured Moments Studio</title>
     <link rel="stylesheet" href="./css/contact.css" />
-    <style>
-      /* General Reset */
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: Arial, sans-serif;
-      }
-
-      body {
-        background-color: #f5f5f5;
-        color: #333;
-        line-height: 1.6;
-      }
-
-      /* Navbar */
-      .navbar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 20px;
-        background-color: white;
-        position: fixed;
-        width: 100%;
-        top: 0;
-        z-index: 1000;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-      }
-
-      .logo {
-        font-size: 1.5rem;
-        font-weight: bold;
-      }
-
-      .nav-links {
-        list-style-type: none;
-        display: flex;
-        gap: 20px;
-      }
-
-      .nav-links li {
-        display: inline;
-      }
-
-      .nav-links a {
-        text-decoration: none;
-        color: #333;
-        font-size: 1rem;
-      }
-
-      .nav-links a:hover {
-        color: #777;
-      }
-
-      /* Contact Section */
-      .contact-section {
-        padding: 80px 20px;
-        margin-top: 60px;
-        text-align: center;
-        background-color: #fafafa;
-      }
-
-      .contact-section h1 {
-        font-size: 2.5rem;
-        margin-bottom: 20px;
-      }
-
-      .contact-section p {
-        font-size: 1.2rem;
-        margin-bottom: 40px;
-        color: #555;
-      }
-
-      .contact-form-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      .contact-form {
-        background-color: white;
-        padding: 30px;
-        border-radius: 10px;
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-        max-width: 500px;
-        width: 100%;
-      }
-
-      .contact-form label {
-        display: block;
-        margin-bottom: 10px;
-        font-size: 1rem;
-      }
-
-      .contact-form input,
-      .contact-form textarea {
-        width: 100%;
-        padding: 10px;
-        margin-bottom: 20px;
-        border-radius: 5px;
-        border: 1px solid #ccc;
-        font-size: 1rem;
-      }
-
-      .contact-form textarea {
-        height: 120px;
-        resize: none;
-      }
-
-      .contact-form button {
-        width: 100%;
-        padding: 10px;
-        background-color: #007bff;
-        color: white;
-        border: none;
-        border-radius: 5px;
-        font-size: 1.2rem;
-        cursor: pointer;
-      }
-
-      .contact-form button:hover {
-        background-color: #0056b3;
-      }
-
-      /* Footer */
-      .footer {
-        display: flex;
-        justify-content: space-between;
-        padding: 20px;
-        background-color: #333;
-        color: white;
-        position: relative;
-        bottom: 0;
-        width: 100%;
-      }
-
-      .footer-left {
-        text-align: left;
-      }
-
-      .footer-right {
-        text-align: right;
-      }
-
-      .footer-right a {
-        color: white;
-        text-decoration: none;
-        margin: 0 10px;
-      }
-
-      .footer-right a:hover {
-        color: #aaa;
-      }
-
-      /* Responsive */
-      @media (max-width: 768px) {
-        .navbar {
-          flex-direction: column;
-        }
-
-        .contact-form {
-          width: 90%;
-        }
-
-        .footer {
-          flex-direction: column;
-          text-align: center;
-        }
-
-        .footer-right {
-          margin-top: 10px;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!-- Navbar -->
     <nav class="navbar">
       <div class="logo">Captured Moments Studio</div>
       <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="wed.html">Wedding Cinema</a></li>
+        <li><a href="portfolios.html">Portfolio</a></li>
       </ul>
     </nav>
 
@@ -199,21 +23,64 @@
     <section class="contact-section">
       <h1>Contact Us</h1>
       <p>
-        At Captured Moments Studio, we take pride in telling your stories through stunning photography and videography. Whether it’s your wedding day, an engagement, maternity, or any other special moment, we are here to capture those cherished memories.
+        At Captured Moments Studio, we take pride in telling your stories
+        through stunning photography and videography. Whether it’s your wedding
+        day, an engagement, maternity, or any other special moment, we are here
+        to capture those cherished memories.
       </p>
 
       <div class="contact-form-container">
-        <form class="contact-form" action="#" method="post">
-          <label for="name">Full Name</label>
-          <input type="text" id="name" name="name" required placeholder="Your Name" />
-
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required placeholder="Your Email" />
-
-          <label for="message">Message</label>
-          <textarea id="message" name="message" required placeholder="Your Message"></textarea>
-
-          <button type="submit">Send Message</button>
+        <form action="contact.html" method="post" class="contact-form">
+          <div class="input-group">
+            <input
+              type="text"
+              id="name"
+              class="input"
+              required
+              placeholder="Full Name"
+            />
+            <label for="name">Full Name</label>
+          </div>
+          <div class="input-group">
+            <input
+              type="email"
+              id="email"
+              class="input"
+              required
+              placeholder="Email Address"
+            />
+            <label for="email">Email Address</label>
+          </div>
+          <div class="input-group">
+            <input
+              type="tel"
+              id="phone"
+              class="input"
+              required
+              placeholder="Phone"
+            />
+            <label for="phone">Phone</label>
+          </div>
+          <div class="input-group">
+            <input
+              type="text"
+              id="subject"
+              class="input"
+              required
+              placeholder="Subject"
+            />
+            <label for="subject">Subject</label>
+          </div>
+          <div class="input-group">
+            <textarea
+              id="message"
+              class="input"
+              required
+              placeholder="Message"
+            ></textarea>
+            <label for="message">Message</label>
+          </div>
+          <button type="submit" class="btn">Send</button>
         </form>
       </div>
     </section>

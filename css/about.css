@@ -1,0 +1,83 @@
+.hero-section2 {
+  position: relative;
+  height: 400px;
+  background: url("../images/1.jpg") no-repeat center center/cover;
+}
+
+.overlay2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content2 {
+  position: relative;
+  color: white;
+  text-align: center;
+  top: 10%;
+  transform: translateY(-50%);
+}
+
+.hero-content2 h1 {
+  font-size: 5rem;
+  margin-bottom: 20px;
+}
+
+.hero-content2 p {
+  font-size: 1.5rem;
+}
+
+/* About Section */
+.about-section2 {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.about-section2 h2 {
+  font-size: 5rem;
+  margin-bottom: 20px;
+}
+
+.about-section2 p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+/* Services Section */
+.services-section2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.services-container2 {
+  display: flex;
+  max-width: 800px;
+  width: 100%;
+}
+
+.services-image {
+  width: 50%;
+  height: auto;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+
+.services-description {
+  width: 50%;
+}
+
+.services-description h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.services-description p {
+  font-size: 1rem;
+  color: #555;
+}
