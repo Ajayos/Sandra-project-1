@@ -7,7 +7,7 @@
 
 body {
   font-family: "Arial", sans-serif;
-  background-color: #f7d99e;
+  background-color: #f1d9a7;
 }
 
 /* Header */
@@ -16,7 +16,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color: #dde1c4;
+  background-color: #f0faae;
 }
 
 .logo {
@@ -44,7 +44,7 @@ nav ul li a {
 /* Main Content */
 .main-content {
   display: flex;
-  height: 100vh;
+  height: 90vh;
   justify-content: space-between;
   padding: 40px;
 }
@@ -123,24 +123,28 @@ nav ul li a {
 }
 
 /* Why Choose Us Section */
+
 .why-choose-us {
   display: flex;
   justify-content: space-between;
   padding: 40px;
-  background-color: #e8e3d9;
+  height: 100vh;
 }
 
 .left-text {
-  width: 50%;
+  position: absolute;
+  left: 16%;
+  top: 100%;
+  width: 70%;
 }
 
-.left-text h2 {
+.left-text h1 {
   font-size: 24px;
   color: #333;
   font-weight: bold;
 }
 
-.left-text h3 {
+.left-text h2 {
   font-size: 20px;
   color: #333;
   font-weight: bold;
@@ -155,9 +159,19 @@ nav ul li a {
 }
 
 .image-section-2 img {
-  max-width: 100%;
-  border-radius: 10px;
-  height: auto;
+  position: absolute;
+  left: 63%;
+  max-width: 80%;
+  height: 80vh;
+}
+
+.image-section-3 {
+  position: absolute;
+  left: 60%;
+  top: 105%;
+  background-color: rgb(255, 255, 255);
+  width: 9%;
+  height: 83.8vh;
 }
 
 /* Footer */
