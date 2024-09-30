@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #dfe2b7;
+    padding: 20px 40px;
+  }
+
+header .logo {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+header nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+.main-content {
+  display: flex;
+  height: calc(100vh - 100px);
+}
+
+.left-section {
+  flex: 1;
+  background: url("../images/8.jpg") no-repeat center center/cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-section blockquote {
+  font-size: 24px;
+  color: black;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.left-section cite {
+  display: block;
+  margin-top: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+.right-section {
+  flex: 1;
+  background-color: #c0c8ce;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px 5px;
+  border: none;
+  border-bottom: 2px solid black;
+  background: transparent;
+  outline: none;
+  font-size: 18px;
+}
+
+.input-group label {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  color: black;
+  font-size: 18px;
+  transition: 0.3s ease all;
+}
+
+.input-group input:focus + label,
+.input-group input:valid + label {
+  top: -20px;
+  font-size: 14px;
+  color: #000;
+}
+
+.signin-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.signin-btn:hover {
+  background-color: #ff4b4b;
+}
+
+.login-links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.login-links a {
+  color: black;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.login-links a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #b5a297;
+  padding: 20px;
+  text-align: center;
+  color: black;
+  font-family: "Arial", sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  height: 100px;
+}
+
+.footer-logo {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-left: 5px;
+}
+
+.footer-center {
+  text-align: center;
+  flex-grow: 1;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: black;
+  font-size: 1em;
+}
+
+.footer-center p {
+  font-size: 1em;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.footer-right {
+  position: relative;
+  margin-bottom: -8%;
+}
+
+.footer-right p {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.footer-right a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
