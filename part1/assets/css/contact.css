@@ -12,26 +12,50 @@ header {
   padding: 10px 20px;
 }
 
-.logo h1 {
-  margin: 0;
-  font-size: 28px;
+.nav {
+  display: inline-flex;
+  margin-left: 124.4px;
+}
+.nav h4 {
+  text-decoration: none;
+  padding-top: 15px;
+  padding-right: 20px;
+  color: #000000;
+  font-size: 48px;
+  font-family: Agency FB;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+nav {
+  margin-left: 60%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20%;
+  color: #000000;
+  padding: 10px 0;
+  text-align: center;
+  z-index: 1000; /* Ensures it stays on top of other elements */
 }
 
 nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
+  display: inline-flex;
+  margin-right: 124.4px;
 }
-
 nav ul li {
-  margin-left: 20px;
+  padding-top: 30px;
+  list-style-type: none;
+  padding-left: 30px;
 }
-
 nav ul li a {
   text-decoration: none;
-  color: black;
-  font-size: 16px;
+  color: #000000;
+  font-family: arial, ”san-serif”;
 }
 
 .contact-section {

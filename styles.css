@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #d9ddb2;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Main Section */
+.main-section {
+    display: flex;
+    background-color: #e4d2b2;
+    padding: 40px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-content img {
+    width: 400px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.right-content {
+    max-width: 500px;
+}
+
+.right-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.right-content p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.info-box {
+    display: flex;
+    gap: 50px;
+    font-weight: bold;
+}
+
+/* Why Choose Us Section */
+.why-choose-us {
+    background-color: #f3e7d2;
+    padding: 40px;
+    text-align: left;
+}
+
+.why-choose-us h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.why-choose-us h3 {
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+.why-choose-us p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #cdc1b2;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.footer-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #333;
+}
+
+.footer-info {
+    font-size: 0.9em;
+}
