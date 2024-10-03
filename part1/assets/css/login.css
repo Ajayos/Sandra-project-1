@@ -33,6 +33,7 @@ header nav ul li a {
   text-decoration: none;
   color: black;
   font-weight: bold;
+  font-family: arial, ”san-serif”;
 }
 
 .main-content {
