@@ -7,7 +7,7 @@
 
 body {
   font-family: "Arial", sans-serif;
-  background-color: #f1d9a7;
+  /* background-color: #f1d9a7; */
   background-image: url("../images/6.jpg"); /* Replace with your image */
   background-size: cover;
   height: 100vh;
@@ -27,12 +27,13 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color: #f0faae;
+  /* background-color: #f0faae; */
 }
 
 .nav {
   display: inline-flex;
   margin-left: 124.4px;
+  margin-top: 10px;
 }
 .nav h4 {
   text-decoration: none;
@@ -41,6 +42,7 @@ header {
   color: #000000;
   font-size: 48px;
   font-family: Agency FB;
+  font-family: "Arial", sans-serif;
 }
 
 .logo {
@@ -73,7 +75,7 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   color: #000000;
-  font-family: arial, ”san-serif”;
+  font-family: "Arial", sans-serif;
 }
 
 /* Main Content */

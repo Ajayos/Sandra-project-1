@@ -10,31 +10,68 @@ body {
   background-color: #f4f4f4;
 }
 
+
+p {
+  font-size: 3rem;
+  margin-top: 120px;
+  margin-left: 50px;
+}
+
+/* Header */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #dfe2b7;
-  padding: 20px 40px;
+  padding: 20px;
+  background-color: #f0faae;
 }
 
-header .logo {
-  font-size: 1em;
-  font-weight: bold;
+.nav {
+  display: inline-flex;
+  margin-left: 124.4px;
 }
-
-header nav ul {
-  list-style-type: none;
-  display: flex;
-  gap: 20px;
-}
-
-header nav ul li a {
+.nav h4 {
   text-decoration: none;
-  color: black;
+  padding-top: 15px;
+  padding-right: 20px;
+  color: #000000;
+  font-size: 48px;
+  font-family: Agency FB;
+}
+
+.logo {
+  font-size: 24px;
   font-weight: bold;
+  color: #333;
+}
+
+nav {
+  margin-left: 60%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20%;
+  color: #000000;
+  padding: 10px 0;
+  text-align: center;
+  z-index: 1000; /* Ensures it stays on top of other elements */
+}
+
+nav ul {
+  display: inline-flex;
+  margin-right: 124.4px;
+}
+nav ul li {
+  padding-top: 30px;
+  list-style-type: none;
+  padding-left: 30px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #000000;
   font-family: arial, ”san-serif”;
 }
+
 
 .main-content {
   display: flex;
