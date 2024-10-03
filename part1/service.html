@@ -1,88 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>service</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="./assets/css/style.css" rel="stylesheet" type="text/css" />
-  </head>
-  <body>
+<head>
+    <title>Service Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./assets/css/service.css" rel="stylesheet" type="text/css">
+</head>
+<body>
     <header>
-      <div class="nav">
-        <h4>DECO</h4>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="service.html">Services</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="login.html">Login</a></li>
-        </ul>
-      </nav>
+        <div class="nav">
+            <h4>DECO</h4>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
     </header>
-    <main>
-      <section id="serv">
-        <h1>OUR SERVICES</h1>
-        <div class="serv-c1">
-          <h4>COPYWRITING SOURCE</h4>
-          <p>
-            Work with you to understand your business specifics and your target
-            audience to our marketing fully strategy. Ut enim ad minim veniam,
-            quis nostrud exercitation.
-          </p>
-        </div>
-        <div class="serv-c2">
-          <h4>WIREFRAMING PLATFORM</h4>
-          <p>
-            Birdie casper 900 nosegrind face plant. Tail boneless aerial dude
-            snake. Christ air darkslide grind transition bearings Kevin Staab.
-            Full pipe mute-air nose-bump.
-          </p>
-        </div>
 
-        <div class="serv-c3">
-          <h4>BUSINESS SOLUTIONS</h4>
-          <p>
-            Hand rail Randy Ruiz frontside pivot wax masonite opposite footed.
-            Slappy drop in manual coffin mini ramp 360 face plant nosegrind
-            full-cab nose bump quarter.
-          </p>
-        </div>
-      </section>
-      <section id="serv-2">
-        <div class="serv-c4">
-          <img
-            src="./assets/images/deborah-cortelazzi-gREquCUXQLI-unsplash.jpg"
-            alt=""
-          />
-          <p>"Simplicity is the ultimate sophistication” — Leonardo da Vinci</p>
-        </div>
-      </section>
-      <section id="serv-3">
-        <div class="image-item">
-          <img
-            src="./assets/images/patrick-perkins-3wylDrjxH-E-unsplash.jpg"
-            alt="Interior design 2"
-          />
-          <p>
-            "Design is the art of making things beautiful and useful." — William
-            Morris
-          </p>
-        </div>
-      </section>
-      <section id="serv-4">
-        <div class="serv-c5">
-          <img
-            src="./assets/images/patrick-perkins-3wylDrjxH-E-unsplash.jpg"
-            alt="Interior design 2"
-          />
-          <p>
-            "Design is the art of making things beautiful and useful." — William
-            Morris
-          </p>
-        </div>
-      </section>
+    <main>
+        <!-- Our Services Section -->
+        <section id="serv">
+            <h1>OUR SERVICES</h1>
+            <div class="serv-c1">
+                <h4>COPYWRITING SOURCE</h4>
+                <p>Work with you to understand your business specifics and your target audience to our marketing fully strategy. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+            </div>
+            <div class="serv-c2">
+                <h4>WIREFRAMING PLATFORM</h4>
+                <p>Birdie casper 900 nosegrind face plant. Tail boneless aerial dude snake. Christ air darkslide grind transition bearings Kevin Staab. Full pipe mute-air nose-bump.</p>
+            </div>
+            <div class="serv-c3">
+                <h4>BUSINESS SOLUTIONS</h4>
+                <p>Hand rail Randy Ruiz frontside pivot wax masonite opposite footed. Slappy drop in manual coffin mini ramp 360 face plant nosegrind full-cab nose bump quarter.</p>
+            </div>
+        </section>
+
+        <!-- First Image on Left, Text on Right -->
+        <section id="serv-2">
+            <div class="image-text-container">
+                <img src="./assets/images/deborah-cortelazzi-gREquCUXQLI-unsplash.jpg" alt="Interior design 1" class="image-left">
+                <div class="text-box">
+                    <h1>Simplicity is the ultimate sophistication</h1>
+                    <p>— Leonardo da Vinci</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Second Image on Right, Text on Left -->
+        <section id="serv-3">
+            <div class="image-text-container reverse">
+                <div class="text-box">
+                    <h1>Design is the art of making things beautiful and useful</h1>
+                    <p>— William Morris</p>
+                </div>
+                <img src="./assets/images/patrick-perkins-3wylDrjxH-E-unsplash.jpg" alt="Interior design 2" class="image-right">
+            </div>
+        </section>
+
+        <!-- Third Image on Left, Text on Right -->
+        <section id="serv-4">
+            <div class="image-text-container">
+                <img src="./assets/images/patrick-perkins-3wylDrjxH-E-unsplash.jpg" alt="Interior design 3" class="image-left">
+                <div class="text-box">
+                    <h1>The only way to do great work is to love what you do</h1>
+                    <p>— Steve Jobs</p>
+                </div>
+            </div>
+        </section>
     </main>
-  </body>
+
+</body>
 </html>
