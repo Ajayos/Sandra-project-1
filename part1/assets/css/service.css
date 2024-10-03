@@ -7,7 +7,7 @@
 
 body {
   font-family: "Arial", sans-serif;
-  background-color: #f1d9a7;
+  background: #deceb1;
 }
 
 /* Header */
@@ -15,7 +15,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 10px;
   background-color: #f0faae;
 }
 
@@ -23,9 +23,10 @@ header {
   display: inline-flex;
   margin-left: 124.4px;
 }
+
 .nav h4 {
   text-decoration: none;
-  padding-top: 15px;
+  padding-top: 10px;
   padding-right: 20px;
   color: #000000;
   font-size: 48px;
@@ -54,17 +55,20 @@ nav ul {
   display: inline-flex;
   margin-right: 124.4px;
 }
+
 nav ul li {
   padding-top: 30px;
   list-style-type: none;
   padding-left: 30px;
 }
+
 nav ul li a {
   text-decoration: none;
   color: #000000;
-  font-family: arial, ”san-serif”;
+  font-family: Arial, sans-serif;
 }
 
+/* Service Section */
 #serv {
   padding: 7% 7% 0 7%;
   background: #deceb1;
@@ -129,73 +133,28 @@ nav ul li a {
   align-items: center;
   justify-content: space-between;
   padding: 40px;
-  background-color: #deceb1;
 }
 
 .image-left,
 .image-right {
   max-width: 50%;
-  max-height: 50%;
   height: auto;
-}
-
-/* Image and Text Box Section */
-.image-text-container {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 40px;
-}
-
-.image-left, 
-.image-right {
-    max-width: 50%;
-    height: auto;
-    border: 5px solid white; /* White border around images */
+  border: 5px solid white; /* White border around images */
 }
 
 .text-box {
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
-    width: 40%;
-    position: relative;
-}
-
-.text-box.right {
-    margin-left: 20px; /* If text is to the right of the image */
-}
-
-.text-box.left {
-    margin-right: 20px; /* If text is to the left of the image */
-}
-
-.text-box h1 {
-    font-size: 24px;
-    color: #333;
-}
-
-.text-box p {
-    font-size: 18px;
-    color: #555;
-    font-style: italic;
-}
-
-/* Reversed Layout for Image and Text */
-.image-right {
-    order: 2; /* Image comes after text for right-side images */
-}
-
-.image-left {
-    order: 1; /* Image comes before text for left-side images */
-}
-
-
-.text-box {
-  background-color: #ffffff;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
   width: 40%;
+  position: relative;
+}
+
+.text-box.right {
+  margin-left: 20px; /* If text is to the right of the image */
+}
+
+.text-box.left {
+  margin-right: 20px; /* If text is to the left of the image */
 }
 
 .text-box h1 {
@@ -209,9 +168,37 @@ nav ul li a {
   font-style: italic;
 }
 
-/* Reversed Layout for Second Section */
-.reverse {
+/* Image Positions */
+/* First image on the left */
+#serv-2 .image-left {
+  order: 1;
+}
+
+#serv-2 .text-box.right {
+  order: 2;
+}
+
+/* Second image on the right (reverse layout) */
+#serv-3 {
+  display: flex;
   flex-direction: row-reverse;
+}
+
+#serv-3 .image-right {
+  order: 1;
+}
+
+#serv-3 .text-box.left {
+  order: 2;
+}
+
+/* Third image on the left */
+#serv-4 .image-left {
+  order: 1;
+}
+
+#serv-4 .text-box.right {
+  order: 2;
 }
 
 /* Footer Section */
@@ -236,6 +223,12 @@ nav ul li a {
   flex: 0 1 auto;
 }
 
+.footer-logo {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #000;
+  }
+
 .footer-logo h1 {
   font-size: 3rem;
   font-weight: 700;
@@ -247,3 +240,61 @@ nav ul li a {
   color: #000;
   text-align: center;
 }
+
+footer {
+  background-color: #b5a297;
+  padding: 20px;
+  text-align: center;
+  color: black;
+  font-family: "Arial", sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  height: 100px;
+}
+
+.footer-center {
+  text-align: center;
+  flex-grow: 1;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: black;
+  font-size: 1em;
+}
+
+.footer-center p {
+  font-size: 1em;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.footer-right {
+  position: relative;
+  margin-bottom: -8%;
+}
+
+.footer-right p {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.footer-right a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
