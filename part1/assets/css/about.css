@@ -37,89 +37,98 @@ nav ul li a {
   color: #333;
 }
 
-.hero {
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
   display: flex;
-  margin: 40px 0;
+  flex-wrap: wrap;
 }
-
-.hero-image {
+.image-section {
   flex: 1;
+  min-width: 300px;
 }
-
-.hero-image img {
+.image-section img {
   max-width: 150%;
   height: 80vh;
   margin-left: 16%;
+  border-radius: 8px;
 }
-
-.hero-text {
+.content-section {
   flex: 1;
-  background-color: white;
-  padding: 40px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-left: -100px;
-  z-index: 1;
+  min-width: 300px;
+  padding: 20px;
 }
-
-.hero-text h2 {
-  font-size: 18px;
+.welcome-box {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
   margin-bottom: 20px;
 }
-
-.hero-text h1 {
+h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+h2 {
   font-size: 36px;
+  margin-top: 0;
   margin-bottom: 20px;
 }
 
 .stats {
   display: flex;
-  justify-content: space-around;
-  margin: 40px 0;
-  background-color: #e8e1d5;
-  padding: 20px 0;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.stat-item {
+  text-align: center;
+}
+.stat-number {
+  font-size: 24px;
+  font-weight: bold;
+}
+.stat-label {
+  font-size: 14px;
+  color: #666;
 }
 
-.stat-item h3 {
-  font-size: 36px;
-  margin-bottom: 10px;
-}
-
-.why-choose-us {
+.container {
   display: flex;
-  margin: 40px 0;
+  max-width: 1200px;
+  margin: 0 auto;
 }
-
-.text-content {
+.content {
   flex: 1;
-  padding: 40px;
+  padding-right: 20px;
 }
-
-.text-content h2 {
+.image {
+  flex: 1;
+}
+h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+h2 {
   font-size: 36px;
+  margin-top: 40px;
   margin-bottom: 20px;
 }
 
-.image-content {
+
+.image {
   flex: 1;
-  position: relative;
+  display: flex;
+  justify-content: flex-end;
 }
 
-.image-content img {
+.image img {
   max-width: 150%;
   height: 80vh;
+  object-fit: cover;
+  margin-right: 20%;
 }
 
-.overlay-box {
-  position: absolute;
-  bottom: -20px;
-  left: -20px;
-  width: 60%;
-  height: 60%;
-  background-color: white;
-  z-index: -1;
-}
+
 
 .footer-center {
   flex: 1;
