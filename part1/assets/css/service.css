@@ -8,6 +8,9 @@
 body {
   font-family: "Arial", sans-serif;
   background: #deceb1;
+  margin: 0;
+  padding: 0;
+  color: #333;
 }
 
 /* Header */
@@ -15,7 +18,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
+  padding: 20px;
   background-color: #f0faae;
 }
 
@@ -68,140 +71,74 @@ nav ul li a {
   font-family: Arial, sans-serif;
 }
 
-/* Service Section */
-#serv {
-  padding: 7% 7% 0 7%;
-  background: #deceb1;
+main {
+  padding: 20px;
 }
-
-#serv h1 {
-  font-family: "Agency FB", sans-serif;
-  font-size: 50px;
+h1 {
+  font-size: 36px;
   margin-bottom: 20px;
 }
-
-.services-container {
+.services {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.service-box {
-  padding: 20px;
-  flex: 1;
-  min-width: 250px;
   margin-bottom: 20px;
 }
-
-.service-box h4 {
-  font-size: 24px;
+.service {
+  width: 30%;
+}
+.service h2 {
+  font-size: 18px;
   margin-bottom: 10px;
 }
-
-.service-box p {
-  font-size: 16px;
-  line-height: 1.5;
+.service p {
+  font-size: 14px;
 }
-
-.serv-c1,
-.serv-c2,
-.serv-c3 {
-  width: 30%;
-  padding-right: 5%;
-}
-
-.serv-c1 h4,
-.serv-c2 h4,
-.serv-c3 h4 {
-  padding-top: 3%;
-  font-size: 20px;
-  font-family: Agency FB;
-}
-
-.serv-c1 p,
-.serv-c2 p,
-.serv-c3 p {
-  padding-top: 3%;
-  font-family: Ebrima;
-}
-
-/* Image and Text Box Section */
 .image-text-container {
-  position: relative;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 40px;
+  align-items: center;
+  margin-bottom: 40px;
 }
-
-.image-left,
-.image-right {
-  max-width: 50%;
-  height: auto;
-  border: 5px solid white; /* White border around images */
-}
-
-.text-box {
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
-  width: 40%;
-  position: relative;
-}
-
-.text-box.right {
-  margin-left: 20px; /* If text is to the right of the image */
-}
-
-.text-box.left {
-  margin-right: 20px; /* If text is to the left of the image */
-}
-
-.text-box h1 {
-  font-size: 24px;
-  color: #333;
-}
-
-.text-box p {
-  font-size: 18px;
-  color: #555;
-  font-style: italic;
-}
-
-/* Image Positions */
-/* First image on the left */
-#serv-2 .image-left {
-  order: 1;
-}
-
-#serv-2 .text-box.right {
-  order: 2;
-}
-
-/* Second image on the right (reverse layout) */
-#serv-3 {
-  display: flex;
+.image-text-container:nth-child(even) {
   flex-direction: row-reverse;
 }
-
-#serv-3 .image-right {
-  order: 1;
+.image-container {
+  width: 48%;
+  position: relative;
+}
+.image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-top: 10px solid white;
 }
 
-#serv-3 .text-box.left {
-  order: 2;
+.image-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 10px;
+  background-color: white;
 }
 
-/* Third image on the left */
-#serv-4 .image-left {
-  order: 1;
+.image-text-container:nth-child(odd) .image-container::after {
+  right: -10px;
 }
 
-#serv-4 .text-box.right {
-  order: 2;
+.image-text-container:nth-child(even) .image-container::after {
+  left: -10px;
 }
 
-/* Footer Section */
+.text-container {
+  width: 48%;
+}
+
+.quote {
+  font-style: italic;
+  margin-top: 10px;
+}
+
 .footer {
   width: 100%;
   height: 40vh;
@@ -224,10 +161,10 @@ nav ul li a {
 }
 
 .footer-logo {
-    font-size: 3rem;
-    font-weight: 700;
-    color: #000;
-  }
+  font-size: 3rem;
+  font-weight: 700;
+  color: #000;
+}
 
 .footer-logo h1 {
   font-size: 3rem;
@@ -297,4 +234,3 @@ footer {
   text-decoration: none;
   font-weight: bold;
 }
-
