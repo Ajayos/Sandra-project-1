@@ -1,81 +1,96 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #fff;
-    height: 100vh;
-    overflow: hidden;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  height: 100vh;
+  overflow: hidden;
 }
 
 .container {
-    display: flex;
-    height: 100vh;
-    width: 100%;
+  display: flex;
+  height: 100vh;
+  width: 100%;
 }
 
 .image-side {
-    width: 50%;
+  width: 50%;
 }
 
 .image-side img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .form-side {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #fff;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
 }
 
 form {
-    width: 80%;
-    margin-right: 20%;
-    max-width: 400px;
+  width: 80%;
+  margin-right: 20%;
+  max-width: 400px;
 }
 
 .input-group {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 input {
-    width: 140%;
-    padding: 15px;
-    margin-right: 100px;
-    border: 2px solid black;
-    border-radius: 30px;
-    font-size: 16px;
-    outline: none;
-    text-align: center;
+  width: 140%;
+  padding: 15px;
+  margin-right: 100px;
+  border: 2px solid black;
+  border-radius: 30px;
+  font-size: 16px;
+  outline: none;
+  text-align: center;
 }
 
 input::placeholder {
-    font-weight: bold;
-    letter-spacing: 1px;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 
 button {
-    width: 140%;
-    padding: 15px;
-    border-radius: 30px;
-    margin-right: 100%;
-    border: 2px solid black;
-    background-color: #fff;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    text-align: center;
+  width: 140%;
+  padding: 15px;
+  border-radius: 30px;
+  margin-right: 100%;
+  border: 2px solid black;
+  background-color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
 }
 
 button:hover {
-    background-color: black;
-    color: white;
-    transition: 0.3s;
+  background-color: black;
+  color: white;
+  transition: 0.3s;
+}
+
+.input-group a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.input-group p {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.input-group p a {
+  color: #007bff;
+  text-decoration: none;
 }
