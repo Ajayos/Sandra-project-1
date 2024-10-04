@@ -10,7 +10,6 @@ p {
   margin-left: 50px;
 }
 
-/* Header */
 header {
   display: flex;
   justify-content: space-between;
@@ -48,7 +47,7 @@ nav {
   color: #000000;
   padding: 10px 0;
   text-align: center;
-  z-index: 1000; /* Ensures it stays on top of other elements */
+  z-index: 1000;
 }
 
 nav ul {

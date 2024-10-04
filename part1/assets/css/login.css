@@ -17,7 +17,6 @@ p {
   margin-left: 50px;
 }
 
-/* Header */
 header {
   display: flex;
   justify-content: space-between;
@@ -54,7 +53,7 @@ nav {
   color: #000000;
   padding: 10px 0;
   text-align: center;
-  z-index: 1000; /* Ensures it stays on top of other elements */
+  z-index: 1000;
 }
 
 nav ul {
@@ -151,7 +150,6 @@ nav ul li a {
   color: #000;
 }
 
-/* Sign-in container moved to the right */
 .signin-container {
   text-align: right;
 }
@@ -171,7 +169,6 @@ nav ul li a {
   background-color: #ff4b4b;
 }
 
-/* Login links at the bottom */
 .login-links {
   display: flex;
   justify-content: space-between;
