@@ -5,29 +5,32 @@
 }
 
 body {
-  font-family: "Arial", sans-serif;
-  background: #deceb1;
-  margin: 0;
-  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0ebe1;
   color: #333;
+  padding-top: 80px;
 }
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 15px;
+  position: fixed;
   background-color: #f0faae;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
 }
 
 .nav {
-  display: inline-flex;
+  display: fixed;
   margin-left: 124.4px;
 }
-
 .nav h4 {
   text-decoration: none;
-  padding-top: 10px;
+  padding-top: 15px;
   padding-right: 20px;
   color: #000000;
   font-size: 48px;
@@ -35,9 +38,11 @@ header {
 }
 
 .logo {
-  font-size: 24px;
-  font-weight: bold;
-  color: #333;
+  text-decoration: none;
+  padding-right: 20px;
+  color: #000000;
+  font-size: 32px;
+  font-family: Agency FB;
 }
 
 nav {
@@ -55,20 +60,26 @@ nav {
 nav ul {
   display: inline-flex;
   margin-right: 124.4px;
+  list-style-type: none;
+  gap: 30px;
 }
-
 nav ul li {
   padding-top: 30px;
   list-style-type: none;
   padding-left: 30px;
 }
-
 nav ul li a {
+  display: fixed;
+
   text-decoration: none;
   color: #000000;
-  font-family: Arial, sans-serif;
+  font-family: arial, ”san-serif”;
 }
 
+nav ul li a:hover {
+  background-color: #e0d6b9;
+  border-radius: 5px;
+}
 main {
   padding: 20px;
 }
