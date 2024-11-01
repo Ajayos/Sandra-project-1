@@ -189,6 +189,12 @@ h2 {
 }
 
 .footer-logo {
+  text-decoration: none;
+  padding-top: 15px;
+  padding-right: 20px;
+  color: #000000;
+  font-size: 48px;
+  font-family: Agency FB;
   flex: 0 1 auto;
 }
 
