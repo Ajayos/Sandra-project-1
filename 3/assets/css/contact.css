@@ -1,0 +1,105 @@
+/* Apply a background image for the entire page */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Container for the contact form with a semi-transparent overlay */
+.contact-container {
+    max-width: 800px;
+    height: 100vh;
+    padding: 20px;
+    margin: 100px auto;
+    background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black background */
+    border-radius: 10px;
+    color: #f9a825; /* Orange text color */
+    text-align: center;
+}
+
+/* Style for the "contact us" heading */
+.contact-container h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #f9a825;
+    text-transform: lowercase;
+}
+
+/* Form layout */
+.contact-form {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Left side form fields */
+.left-side {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+.left-side label {
+    text-align: left;
+    color: #f9a825;
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.left-side input {
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    background-color: #fff;
+}
+
+/* Button styling - positioned under the Subject field */
+.left-side button {
+    background-color: #f9a825;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.left-side button:hover {
+    background-color: #ffcc33;
+}
+
+/* Right side for the message textarea */
+.right-side {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+.right-side label {
+    text-align: left;
+    color: #f9a825;
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.right-side textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    background-color: #fff;
+    height: 290px;
+    resize: none;
+}

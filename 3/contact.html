@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="./assets/css/contact.css" />
+  </head>
+  <body>
+    <div class="contact-container">
+      <h2>contact us</h2>
+      <form class="contact-form">
+        <div class="left-side">
+          <label for="name">NAME:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">EMAIL:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="phone">PHONE:</label>
+          <input type="tel" id="phone" name="phone" required />
+
+          <label for="subject">SUBJECT:</label>
+          <input type="text" id="subject" name="subject" required />
+
+          <!-- Submit button is now below the subject field -->
+          <button type="submit">Submit</button>
+        </div>
+
+        <div class="right-side">
+          <label for="message">MESSAGE:</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
