@@ -68,8 +68,6 @@ body {
 .ingredients li {
   margin-bottom: 8px;
 }
-
-/* Responsive */
 @media (max-width: 768px) {
   .content {
     flex-direction: column;
