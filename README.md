@@ -1,7 +1,7 @@
 # Sandra-project-1
 
-[*VIEW PAGE*](https://ajayos.github.io/Sandra-project-1)
+[_VIEW PAGE_](https://ajayos.github.io/Sandra-project-1)
 
-[*VIEW PAGE 2*](https://ajayos.github.io/Sandra-project-1/part1)
+[_VIEW PAGE 2_](https://ajayos.github.io/Sandra-project-1/part1)
 
-[*VIEW PAGE 3*](https://ajayos.github.io/Sandra-project-1/3/)
+[_VIEW PAGE 3_](https://ajayos.github.io/Sandra-project-1/3/)

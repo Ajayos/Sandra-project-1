@@ -26,7 +26,12 @@ header {
 
 .nav {
   display: fixed;
+  text-decoration: none;
   margin-left: 124.4px;
+  font-size: 48px;
+  font-size: 3rem;
+  font-family: Agency FB;
+  flex: 0 1 auto;
 }
 .nav h4 {
   text-decoration: none;
@@ -108,11 +113,11 @@ nav ul li a:hover {
 }
 
 form {
-    background: rgba(255, 255, 255, 0.8);
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    width: 380px;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  width: 380px;
 }
 
 .input-group {

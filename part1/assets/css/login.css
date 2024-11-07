@@ -81,7 +81,6 @@ nav ul li a:hover {
   border-radius: 5px;
 }
 
-
 .main-content {
   display: flex;
   height: calc(100vh - 100px);
