@@ -1,3 +1,6 @@
+
+
+
 .hero-section2 {
   position: relative;
   height: 400px;
@@ -53,16 +56,24 @@
   margin-bottom: 20px;
 }
 
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+.scrolling-gallery {
+  display: flex;
+  overflow-x: auto;
   gap: 10px;
+  padding: 10px;
 }
 
-.gallery img {
-  width: 100%;
+.scrolling-gallery img {
+  flex-shrink: 0;
+  width: 300px;
   height: auto;
   border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.scrolling-gallery img:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
 }
 
 .locations-section {
@@ -98,7 +109,9 @@ blockquote {
 }
 
 @media (max-width: 768px) {
-  .gallery {
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  .scrolling-gallery img {
+    width: 200px;
   }
 }
+
+
