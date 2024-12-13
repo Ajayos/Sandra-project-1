@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -36,6 +36,9 @@
               class="input"
               required
               placeholder="Full Name"
+              pattern="[A-Za-z\s]+"
+              title="Only letters and spaces are allowed."
+              oninput="this.value = this.value.replace(/[^A-Za-z\s]/g, '')"
             />
             <label for="name">Full Name</label>
           </div>
@@ -56,6 +59,9 @@
               class="input"
               required
               placeholder="Phone"
+              pattern="\d{10}"
+              maxlength="10"
+              title="Phone number must be exactly 10 digits."
             />
             <label for="phone">Phone</label>
           </div>
