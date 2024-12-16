@@ -1,75 +1,100 @@
-.contact-section {
-  padding: 80px 20px;
-  margin-top: 60px;
-  text-align: center;
-  background-color: #fafafa;
+body {
+  margin: 50;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #f8ebe6, #ffffff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 130vh;
 }
 
-.contact-section h1 {
-  font-size: 2.5rem;
+.container {
+  display: flex;
+  width: 80%;
+  height: 80%;
+  background: #ffffff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.info-section,
+.form-section {
+  flex: 5;
+  padding: 40px;
+}
+
+.info-section {
+  background-color: #d58b61;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.info-section h1 {
+  font-size: 2rem;
   margin-bottom: 20px;
 }
 
-.contact-section p {
-  font-size: 1.2rem;
-  margin-bottom: 40px;
-  color: #555;
+.info-section p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
 }
 
-.contact-form-container {
+.info-section a {
+  color: #e3e0e1;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.info-section a:hover {
+  text-decoration: underline;
+}
+
+.form-section {
+  background: #f9f9f9;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 
 .contact-form {
-  background-color: white;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  max-width: 500px;
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .input-group {
-  position: relative;
-  margin-bottom: 20px;
-}
-
-.input-group .input {
-  width: 100%;
-  padding: 10px 10px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  outline: none;
-  background: transparent;
-}
-
-.input-group textarea {
-  resize: none;
-  height: 100px;
+  display: flex;
+  flex-direction: column;
 }
 
 .input-group label {
-  position: absolute;
-  top: -10px;
-  left: 5px;
-  font-size: 12px;
-  color: #333;
-  pointer-events: none;
-  position: absolute;
-  transform: translateY(-50%);
-  pointer-events: none;
-  transition: all 0.3s ease;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #555;
+}
+
+.input-group .input {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+
+.input-group .input:focus {
+  border-color: #d58b61;
 }
 
 .btn {
-  width: 100%;
   padding: 10px;
-  background-color: #0314ff;
+  background-color: #d58b61;
   color: white;
-  font-size: 16px;
+  font-size: 14px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -77,5 +102,5 @@
 }
 
 .btn:hover {
-  background-color: #0300a7;
+  background-color: #b05b3b;
 }
