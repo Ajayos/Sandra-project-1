@@ -55,10 +55,25 @@ body {
   text-decoration: none;
   color: #333;
   font-size: 1rem;
+  position: relative;
 }
 
-.nav-links a:hover {
-  color: #777;
+.nav-links a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #007bff;
+  transition: width 0.3s;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+  width: 100%;
 }
 
 .nav-links2 {
