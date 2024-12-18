@@ -19,6 +19,12 @@ body {
   overflow: hidden;
 }
 
+#message {
+  resize: none;
+  overflow-y: auto;
+  height: calc(1.5em * 6);
+}
+
 .info-section,
 .form-section {
   flex: 5;
