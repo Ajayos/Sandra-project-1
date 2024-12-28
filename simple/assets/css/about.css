@@ -1,0 +1,29 @@
+.services-section {
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+.services-container {
+  display: flex;
+  max-width: 800px;
+  width: 100%;
+}
+.services-image {
+  width: 50%;
+  height: auto;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+.services-description {
+  width: 50%;
+}
+.services-description h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+.services-description p {
+  font-size: 1rem;
+  color: #555;
+}

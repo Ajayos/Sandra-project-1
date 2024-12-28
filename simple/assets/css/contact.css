@@ -1,0 +1,108 @@
+body {
+  margin: 50;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #f8ebe6, #ffffff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 130vh;
+}
+
+.container {
+  display: flex;
+  width: 80%;
+  height: 80%;
+  background: #ffffff;
+}
+
+#message {
+  resize: none;
+  overflow-y: auto;
+  height: calc(1.5em * 6);
+}
+
+.info-section,
+.form-section {
+  flex: 5;
+  padding: 40px;
+}
+
+.info-section {
+  background-color: #d58b61;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.info-section h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.info-section p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.info-section a {
+  color: #e3e0e1;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.info-section a:hover {
+  text-decoration: underline;
+}
+
+.form-section {
+  background: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group label {
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #555;
+}
+
+.input-group .input {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+
+.input-group .input:focus {
+  border-color: #d58b61;
+}
+
+.btn {
+  padding: 10px;
+  background-color: #d58b61;
+  color: white;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #b05b3b;
+}
