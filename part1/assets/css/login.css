@@ -169,10 +169,6 @@ nav ul li a {
   transition: background-color 0.3s ease;
 }
 
-.signin-btn:hover {
-  background-color: #ff4b4b;
-}
-
 .login-links {
   display: flex;
   justify-content: space-between;
