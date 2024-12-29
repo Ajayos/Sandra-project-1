@@ -76,11 +76,6 @@ nav ul li a {
   font-family: arial, ”san-serif”;
 }
 
-nav ul li a:hover {
-  background-color: #e0d6b9;
-  border-radius: 5px;
-}
-
 .container {
   max-width: 1200px;
   margin: 0 auto;
