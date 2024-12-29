@@ -125,24 +125,6 @@ h1 {
   width: 100%;
   height: auto;
   display: block;
-  border-top: 10px solid white;
-}
-
-.image-container::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 10px;
-  background-color: white;
-}
-
-.image-text-container:nth-child(odd) .image-container::after {
-  right: -10px;
-}
-
-.image-text-container:nth-child(even) .image-container::after {
-  left: -10px;
 }
 
 .text-container {
